@@ -57,15 +57,9 @@
         .flower-4 { left: 88%; top: 68%; animation-delay: 6s; }
         .flower-5 { left: 48%; top: 8%; animation-delay: 8s; }
         @keyframes floatFlower {
-            0% {
-                transform: translateY(0) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-28px) rotate(18deg);
-            }
-            100% {
-                transform: translateY(0) rotate(360deg);
-            }
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-28px) rotate(18deg); }
+            100% { transform: translateY(0) rotate(360deg); }
         }
         header {
             min-height: 100vh;
@@ -155,8 +149,7 @@
             height: 150px;
             margin: 0 auto 26px;
             border-radius: 50%;
-            background:
-                linear-gradient(135deg, #f8c8dc, #e8d8ff);
+            background: linear-gradient(135deg, #f8c8dc, #e8d8ff);
             border: 7px solid white;
             box-shadow: 0 18px 35px rgba(244, 114, 182, 0.35);
             display: flex;
@@ -306,9 +299,7 @@
             border: 1px solid rgba(248, 200, 220, 0.8);
             transition: 0.3s ease;
         }
-        .stat:hover {
-            transform: translateY(-5px);
-        }
+        .stat:hover { transform: translateY(-5px); }
         .stat strong {
             display: block;
             font-size: 1.7rem;
@@ -339,19 +330,10 @@
             background: linear-gradient(135deg, #fff, #ffe4ec);
             box-shadow: 0 22px 38px rgba(244, 114, 182, 0.23);
         }
-        .skill-icon {
-            font-size: 2.2rem;
-            margin-bottom: 12px;
-        }
-        .skill-card h3 {
-            color: #4a4453;
-            margin-bottom: 8px;
-        }
-        .skill-card p {
-            color: var(--text-soft);
-            font-size: 0.94rem;
-            line-height: 1.5;
-        }
+        .skill-icon { font-size: 2.2rem; margin-bottom: 12px; }
+        .skill-card h3 { color: #4a4453; margin-bottom: 8px; }
+        .skill-card p { color: var(--text-soft); font-size: 0.94rem; line-height: 1.5; }
+        
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -378,9 +360,7 @@
             right: -35px;
             top: -35px;
         }
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
+        .project-card:hover { transform: translateY(-10px); }
         .project-icon {
             width: 58px;
             height: 58px;
@@ -393,26 +373,9 @@
             position: relative;
             z-index: 1;
         }
-        .project-card h3 {
-            color: #3f364b;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-        }
-        .project-card p {
-            color: var(--text-soft);
-            line-height: 1.7;
-            margin-bottom: 18px;
-            position: relative;
-            z-index: 1;
-        }
-        .project-labels {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            position: relative;
-            z-index: 1;
-        }
+        .project-card h3 { color: #3f364b; margin-bottom: 12px; position: relative; z-index: 1; }
+        .project-card p { color: var(--text-soft); line-height: 1.7; margin-bottom: 18px; position: relative; z-index: 1; }
+        .project-labels { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 1; }
         .project-labels span {
             font-size: 0.8rem;
             padding: 7px 10px;
@@ -421,10 +384,7 @@
             color: #be185d;
             font-weight: 800;
         }
-        .timeline {
-            display: grid;
-            gap: 18px;
-        }
+        .timeline { display: grid; gap: 18px; }
         .timeline-item {
             display: grid;
             grid-template-columns: 56px 1fr;
@@ -449,83 +409,39 @@
             padding: 22px;
             box-shadow: 0 14px 28px rgba(244, 114, 182, 0.14);
         }
-        .timeline-content h3 {
-            color: #3f364b;
-            margin-bottom: 8px;
-        }
-        .timeline-content p {
-            color: var(--text-soft);
-            line-height: 1.7;
-        }
+        .timeline-content h3 { color: #3f364b; margin-bottom: 8px; }
+        .timeline-content p { color: var(--text-soft); line-height: 1.7; }
         .contact-card {
             text-align: center;
-            background:
-                linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 228, 236, 0.78));
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 228, 236, 0.78));
         }
-        .contact-card p {
-            color: var(--text-soft);
-            line-height: 1.8;
-            max-width: 740px;
-            margin: 0 auto 28px;
-        }
-        footer {
-            text-align: center;
-            padding: 36px 20px;
-            color: var(--text-soft);
-        }
-        .heart {
-            color: #ec4899;
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: 0.8s ease;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .contact-card p { color: var(--text-soft); line-height: 1.8; max-width: 740px; margin: 0 auto 28px; }
+        footer { text-align: center; padding: 36px 20px; color: var(--text-soft); }
+        .heart { color: #ec4899; }
+        .reveal { opacity: 0; transform: translateY(28px); transition: 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
         @media (max-width: 768px) {
-            nav {
-                border-radius: 24px;
-                align-items: flex-start;
-                gap: 10px;
-            }
-            .nav-links {
-                display: none;
-            }
-            .hero-card {
-                padding: 42px 22px;
-                border-radius: 30px;
-            }
-            .avatar {
-                width: 124px;
-                height: 124px;
-                font-size: 2.75rem;
-            }
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-            .timeline-item {
-                grid-template-columns: 1fr;
-            }
-            .timeline-dot {
-                width: 48px;
-                height: 48px;
-            }
-            section {
-                padding: 58px 0;
-            }
+            nav { border-radius: 24px; align-items: flex-start; gap: 10px; }
+            .nav-links { display: none; }
+            .hero-card { padding: 42px 22px; border-radius: 30px; }
+            .avatar { width: 124px; height: 124px; font-size: 2.75rem; }
+            .about-grid { grid-template-columns: 1fr; }
+            .timeline-item { grid-template-columns: 1fr; }
+            .timeline-dot { width: 48px; height: 48px; }
+            section { padding: 58px 0; }
         }
     </style>
 </head>
 <body>
+    <!-- FLORES FLOTANTES -->
     <div class="floating-flower flower-1">🌸</div>
     <div class="floating-flower flower-2">🌷</div>
     <div class="floating-flower flower-3">✨</div>
     <div class="floating-flower flower-4">🌸</div>
     <div class="floating-flower flower-5">💗</div>
 
+    <!-- NAVEGACIÓN -->
     <nav>
         <div class="brand">LFQ ✨</div>
         <ul class="nav-links">
@@ -536,16 +452,13 @@
         </ul>
     </nav>
 
+    <!-- HERO / BANNER -->
     <header>
         <div class="hero-card">
             <div class="hero-content">
                 <div class="avatar">LF</div>
-                <h1>
-                    Luisa Fernanda <span class="gradient-text">Quintero</span>
-                </h1>
-                <p class="subtitle">
-                    Analista de Datos & Automatización ✨
-                </p>
+                <h1>Luisa Fernanda <span class="gradient-text">Quintero</span></h1>
+                <p class="subtitle">Analista de Datos & Automatización ✨</p>
                 <p class="tagline">
                     Transformando datos en decisiones inteligentes mediante analítica comercial,
                     visualizaciones claras, automatización de procesos y soluciones con impacto real.
@@ -571,6 +484,7 @@
     </header>
 
     <main>
+        <!-- SECCIÓN SOBRE MÍ -->
         <section id="sobre-mi" class="reveal">
             <div class="section-title">
                 <span>💖 Sobre mí</span>
@@ -612,6 +526,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN TECNOLOGÍAS -->
         <section id="tecnologias" class="reveal">
             <div class="section-title">
                 <span>🛠️ Tecnologías</span>
@@ -651,6 +566,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN PROYECTOS -->
         <section id="proyectos" class="reveal">
             <div class="section-title">
                 <span>🚀 Proyectos</span>
@@ -660,85 +576,55 @@
                 <article class="project-card">
                     <div class="project-icon">🎁</div>
                     <h3>Gift Cards Analytics</h3>
-                    <p>
-                        Consolidación, seguimiento y análisis de información relacionada con
-                        activaciones, redenciones y KPIs comerciales de Gift Cards.
-                    </p>
-                    <div class="project-labels">
-                        <span>BigQuery</span>
-                        <span>SQL</span>
-                        <span>Looker</span>
-                    </div>
+                    <p>Consolidación, seguimiento y análisis de información relacionada con activaciones, redenciones y KPIs comerciales de Gift Cards.</p>
+                    <div class="project-labels"><span>BigQuery</span><span>SQL</span><span>Looker</span></div>
                 </article>
                 <article class="project-card">
                     <div class="project-icon">📊</div>
-                    <h3>Dashboard Comercial Ejecutivo</h3>
-                    <p>
-                        Visualización de indicadores clave para seguimiento comercial,
-                        comités y toma de decisiones estratégicas.
-                    </p>
-                    <div class="project-labels">
-                        <span>Power BI</span>
-                        <span>Looker</span>
-                        <span>KPIs</span>
-                    </div>
+                    <h3>Dashboard Ejecutivo</h3>
+                    <p>Visualización de indicadores clave para seguimiento comercial, comités y toma de decisiones estratégicas.</p>
+                    <div class="project-labels"><span>Power BI</span><span>Looker</span><span>KPIs</span></div>
                 </article>
                 <article class="project-card">
                     <div class="project-icon">🤖</div>
                     <h3>Automatización de Reportes</h3>
-                    <p>
-                        Procesos automatizados para extraer, limpiar, consolidar y publicar
-                        información reduciendo tareas manuales.
-                    </p>
-                    <div class="project-labels">
-                        <span>Python</span>
-                        <span>Excel</span>
-                        <span>Automation</span>
-                    </div>
+                    <p>Procesos automatizados para extraer, limpiar, consolidar y publicar información reduciendo tareas manuales.</p>
+                    <div class="project-labels"><span>Python</span><span>Excel</span><span>Automation</span></div>
                 </article>
                 <article class="project-card">
                     <div class="project-icon">☁️</div>
                     <h3>BigQuery Analytics</h3>
-                    <p>
-                        Desarrollo de consultas optimizadas, vistas analíticas y validaciones
-                        de datos para reporting comercial.
-                    </p>
-                    <div class="project-labels">
-                        <span>SQL</span>
-                        <span>BigQuery</span>
-                        <span>Data Modeling</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-icon">🌷</div>
-                    <h3>Mi Día App</h3>
-                    <p>
-                        Concepto de herramienta personal de productividad para organizar tareas,
-                        prioridades y seguimiento diario.
-                    </p>
-                    <div class="project-labels">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Productivity</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-icon">✨</div>
-                    <h3>Visual Storytelling</h3>
-                    <p>
-                        Diseño de reportes visuales limpios, modernos y fáciles de interpretar
-                        para audiencias ejecutivas.
-                    </p>
-                    <div class="project-labels">
-                        <span>Design</span>
-
-                        <span>Dashboards</span>
-                        <span>Insights</span>
-                    </div>
+                    <p>Desarrollo de consultas optimizadas, vistas analíticas y validaciones de datos para reporting comercial.</p>
+                    <div class="project-labels"><span>SQL</span><span>BigQuery</span><span>Data Modeling</span></div>
                 </article>
             </div>
         </section>
 
+        <!-- NUEVA SECCIÓN JUEGO INTERACTIVO -->
+        <section id="juego-interactivo" class="reveal">
+            <div class="section-title">
+                <span>🎮 Explora</span>
+                <h2>Recorre mis proyectos</h2>
+            </div>
+            <div class="glass-card" style="text-align: center; position: relative;">
+                <p style="margin-bottom: 20px; color: var(--text-soft);">
+                    Usa las <strong>flechas de tu teclado</strong> (o W, A, S, D) para moverte. ¡Acércate a los elementos del mapa!
+                </p>
+                
+                <div style="position: relative; max-width: 800px; margin: 0 auto;">
+                    <canvas id="gameCanvas" width="800" height="400" 
+                        style="background: #e8d8ff; border-radius: 24px; max-width: 100%; border: 3px solid white; box-shadow: inset 0 0 20px rgba(0,0,0,0.05);">
+                    </canvas>
+
+                    <div id="game-tooltip" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 15px 25px; border-radius: 20px; box-shadow: var(--shadow); border: 2px solid var(--pink-strong); pointer-events: none; display: none; z-index: 10; min-width: 250px;">
+                        <h3 id="tooltip-title" style="color: var(--pink-strong); margin-bottom: 5px; font-size: 1.2rem;">Proyecto</h3>
+                        <p id="tooltip-desc" style="color: var(--text-dark); font-size: 0.95rem; margin: 0;">Descripción del proyecto aquí.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LO QUE HAGO -->
         <section class="reveal">
             <div class="section-title">
                 <span>🌸 Lo que hago</span>
@@ -749,44 +635,34 @@
                     <div class="timeline-dot">1</div>
                     <div class="timeline-content">
                         <h3>Organizo y limpio datos</h3>
-                        <p>
-                            Convierto archivos, tablas y fuentes dispersas en bases de datos
-                            listas para analizar y visualizar.
-                        </p>
+                        <p>Convierto archivos, tablas y fuentes dispersas en bases de datos listas para analizar y visualizar.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot">2</div>
                     <div class="timeline-content">
                         <h3>Automatizo procesos</h3>
-                        <p>
-                            Reduzco tareas repetitivas mediante scripts, consultas y flujos
-                            que permiten ahorrar tiempo y mejorar la calidad de la información.
-                        </p>
+                        <p>Reduzco tareas repetitivas mediante scripts, consultas y flujos que permiten ahorrar tiempo y mejorar la calidad de la información.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot">3</div>
                     <div class="timeline-content">
                         <h3>Construyo dashboards</h3>
-                        <p>
-                            Creo visualizaciones claras, atractivas y enfocadas en la toma de decisiones.
-                        </p>
+                        <p>Creo visualizaciones claras, atractivas y enfocadas en la toma de decisiones.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot">4</div>
                     <div class="timeline-content">
                         <h3>Traduzco datos en insights</h3>
-                        <p>
-                            Ayudo a entender qué está pasando en el negocio y cuáles son las
-                            oportunidades de mejora.
-                        </p>
+                        <p>Ayudo a entender qué está pasando en el negocio y cuáles son las oportunidades de mejora.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECCIÓN CONTACTO -->
         <section id="contacto" class="reveal">
             <div class="section-title">
                 <span>📬 Contacto</span>
@@ -814,7 +690,9 @@
         Hecho con <span class="heart">💗</span> por Luisa Fernanda Quintero · 2026
     </footer>
 
+    <!-- SCRIPTS MÁGICOS Y DEL JUEGO -->
     <script>
+        // 1. Animaciones de Scroll
         const reveals = document.querySelectorAll(".reveal");
         function revealOnScroll() {
             for (let i = 0; i < reveals.length; i++) {
@@ -828,6 +706,8 @@
         }
         window.addEventListener("scroll", revealOnScroll);
         window.addEventListener("load", revealOnScroll);
+
+        // 2. Chispas al mover el mouse
         document.addEventListener("mousemove", function(e) {
             const sparkle = document.createElement("div");
             sparkle.innerHTML = "✨";
@@ -844,10 +724,92 @@
                 sparkle.style.transform = "translateY(-18px) scale(0.4)";
                 sparkle.style.opacity = "0";
             }, 20);
-            setTimeout(() => {
-                sparkle.remove();
-            }, 850);
+            setTimeout(() => { sparkle.remove(); }, 850);
         });
+
+        // 3. Lógica del Mini Juego Stardew
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const tooltip = document.getElementById('game-tooltip');
+        const tooltipTitle = document.getElementById('tooltip-title');
+        const tooltipDesc = document.getElementById('tooltip-desc');
+
+        const player = { x: canvas.width / 2, y: canvas.height / 2, size: 40, speed: 4, emoji: '👩🏻‍💻' };
+        const keys = { ArrowUp: false, ArrowDown: false, ArrowLeft: false, ArrowRight: false, w: false, a: false, s: false, d: false };
+
+        const objects = [
+            { x: 150, y: 100, emoji: '🎁', title: 'Gift Cards Analytics', desc: 'Análisis comercial y tracking en BigQuery.' },
+            { x: 650, y: 120, emoji: '📊', title: 'Dashboard Ejecutivo', desc: 'KPIs interactivos hechos en Power BI y Looker.' },
+            { x: 200, y: 300, emoji: '🤖', title: 'Automatización', desc: 'Procesos con Python que ahorran horas manuales.' },
+            { x: 600, y: 280, emoji: '☁️', title: 'BigQuery Analytics', desc: 'Vistas analíticas y validaciones SQL.' }
+        ];
+
+        window.addEventListener('keydown', (e) => {
+            if(keys.hasOwnProperty(e.key)) {
+                keys[e.key] = true;
+                if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key)) e.preventDefault();
+            }
+        });
+
+        window.addEventListener('keyup', (e) => {
+            if(keys.hasOwnProperty(e.key)) keys[e.key] = false;
+        });
+
+        function gameLoop() {
+            if ((keys.ArrowUp || keys.w) && player.y > 30) player.y -= player.speed;
+            if ((keys.ArrowDown || keys.s) && player.y < canvas.height - 30) player.y += player.speed;
+            if ((keys.ArrowLeft || keys.a) && player.x > 30) player.x -= player.speed;
+            if ((keys.ArrowRight || keys.d) && player.x < canvas.width - 30) player.x += player.speed;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Decoración de fondo
+            ctx.font = '24px Arial';
+            ctx.fillText('🌸', 80, 50); ctx.fillText('🌷', 720, 350);
+            ctx.fillText('✨', 400, 80); ctx.fillText('🌱', 50, 350);
+
+            let nearProject = false;
+
+            objects.forEach(obj => {
+                ctx.font = '45px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                
+                ctx.fillStyle = 'rgba(0,0,0,0.1)';
+                ctx.beginPath();
+                ctx.ellipse(obj.x, obj.y + 20, 25, 10, 0, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.fillText(obj.emoji, obj.x, obj.y);
+
+                const dx = player.x - obj.x;
+                const dy = player.y - obj.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < 60) {
+                    nearProject = true;
+                    tooltipTitle.textContent = obj.title;
+                    tooltipDesc.textContent = obj.desc;
+                    tooltip.style.display = 'block';
+                    
+                    ctx.strokeStyle = '#f472b6';
+                    ctx.lineWidth = 3;
+                    ctx.setLineDash([5, 5]);
+                    ctx.beginPath();
+                    ctx.arc(obj.x, obj.y, 45, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.setLineDash([]);
+                }
+            });
+
+            if (!nearProject) tooltip.style.display = 'none';
+
+            ctx.font = '45px Arial';
+            ctx.fillText(player.emoji, player.x, player.y);
+
+            requestAnimationFrame(gameLoop);
+        }
+        gameLoop();
     </script>
 </body>
 </html>
