@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luisa Fernanda Quintero | Data Analyst</title>
-
     <style>
         :root {
             --pink-main: #f8c8dc;
@@ -18,14 +17,12 @@
             --card-bg: rgba(255, 255, 255, 0.72);
             --shadow: 0 20px 50px rgba(244, 114, 182, 0.25);
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background:
@@ -35,7 +32,6 @@
             color: var(--text-dark);
             overflow-x: hidden;
         }
-
         body::before {
             content: "";
             position: fixed;
@@ -48,7 +44,6 @@
             pointer-events: none;
             z-index: -2;
         }
-
         .floating-flower {
             position: fixed;
             font-size: 24px;
@@ -56,13 +51,11 @@
             animation: floatFlower 12s linear infinite;
             z-index: -1;
         }
-
         .flower-1 { left: 8%; top: 12%; animation-delay: 0s; }
         .flower-2 { left: 82%; top: 15%; animation-delay: 2s; }
         .flower-3 { left: 14%; top: 72%; animation-delay: 4s; }
         .flower-4 { left: 88%; top: 68%; animation-delay: 6s; }
         .flower-5 { left: 48%; top: 8%; animation-delay: 8s; }
-
         @keyframes floatFlower {
             0% {
                 transform: translateY(0) rotate(0deg);
@@ -74,7 +67,6 @@
                 transform: translateY(0) rotate(360deg);
             }
         }
-
         header {
             min-height: 100vh;
             display: flex;
@@ -83,7 +75,6 @@
             padding: 90px 22px 60px;
             position: relative;
         }
-
         nav {
             position: fixed;
             top: 18px;
@@ -101,19 +92,16 @@
             align-items: center;
             z-index: 10;
         }
-
         .brand {
             font-weight: 800;
             color: var(--pink-strong);
             letter-spacing: 0.5px;
         }
-
         .nav-links {
             display: flex;
             gap: 18px;
             list-style: none;
         }
-
         .nav-links a {
             color: var(--text-dark);
             text-decoration: none;
@@ -121,11 +109,9 @@
             font-weight: 600;
             transition: 0.3s ease;
         }
-
         .nav-links a:hover {
             color: var(--pink-strong);
         }
-
         .hero-card {
             width: min(1050px, 100%);
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 228, 236, 0.68));
@@ -138,7 +124,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero-card::before {
             content: "";
             position: absolute;
@@ -150,7 +135,6 @@
             right: -70px;
             filter: blur(3px);
         }
-
         .hero-card::after {
             content: "";
             position: absolute;
@@ -162,12 +146,10 @@
             left: -65px;
             filter: blur(3px);
         }
-
         .hero-content {
             position: relative;
             z-index: 2;
         }
-
         .avatar {
             width: 150px;
             height: 150px;
@@ -185,7 +167,6 @@
             color: white;
             position: relative;
         }
-
         .avatar::after {
             content: "✨";
             position: absolute;
@@ -200,27 +181,23 @@
             font-size: 1.2rem;
             box-shadow: 0 10px 20px rgba(244, 114, 182, 0.2);
         }
-
         h1 {
             font-size: clamp(2.4rem, 6vw, 5rem);
             line-height: 1.05;
             color: #3f364b;
             margin-bottom: 16px;
         }
-
         .gradient-text {
             background: linear-gradient(90deg, #ec4899, #a78bfa, #f472b6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .subtitle {
             font-size: clamp(1.15rem, 2.5vw, 1.8rem);
             font-weight: 700;
             color: var(--text-dark);
             margin-bottom: 12px;
         }
-
         .tagline {
             font-size: 1.08rem;
             color: var(--text-soft);
@@ -228,7 +205,6 @@
             margin: 0 auto 30px;
             line-height: 1.8;
         }
-
         .hero-tags {
             display: flex;
             justify-content: center;
@@ -236,7 +212,6 @@
             gap: 12px;
             margin-bottom: 34px;
         }
-
         .hero-tags span {
             background: rgba(255, 255, 255, 0.78);
             border: 1px solid rgba(248, 200, 220, 0.9);
@@ -247,14 +222,12 @@
             font-weight: 700;
             box-shadow: 0 8px 18px rgba(244, 114, 182, 0.12);
         }
-
         .buttons {
             display: flex;
             justify-content: center;
             gap: 16px;
             flex-wrap: wrap;
         }
-
         .btn {
             text-decoration: none;
             padding: 14px 24px;
@@ -263,37 +236,30 @@
             transition: 0.3s ease;
             border: 2px solid transparent;
         }
-
         .btn-primary {
             background: linear-gradient(135deg, #f472b6, #a78bfa);
             color: white;
             box-shadow: 0 15px 30px rgba(244, 114, 182, 0.35);
         }
-
         .btn-secondary {
             background: white;
             color: #ec4899;
             border-color: #f8c8dc;
         }
-
         .btn:hover {
             transform: translateY(-4px) scale(1.02);
         }
-
         main {
             width: min(1150px, 92%);
             margin: 0 auto;
         }
-
         section {
             padding: 78px 0;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 42px;
         }
-
         .section-title span {
             display: inline-block;
             background: #fff;
@@ -304,12 +270,10 @@
             box-shadow: 0 10px 22px rgba(244, 114, 182, 0.14);
             margin-bottom: 15px;
         }
-
         .section-title h2 {
             font-size: clamp(2rem, 4vw, 3rem);
             color: #3f364b;
         }
-
         .glass-card {
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.82);
@@ -318,27 +282,23 @@
             padding: 34px;
             box-shadow: var(--shadow);
         }
-
         .about-grid {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
             gap: 28px;
             align-items: stretch;
         }
-
         .about-text p {
             color: var(--text-soft);
             line-height: 1.9;
             font-size: 1.05rem;
             margin-bottom: 16px;
         }
-
         .mini-stats {
             display: grid;
             grid-template-columns: 1fr;
             gap: 16px;
         }
-
         .stat {
             background: linear-gradient(135deg, #fff, #ffe4ec);
             border-radius: 24px;
@@ -346,29 +306,24 @@
             border: 1px solid rgba(248, 200, 220, 0.8);
             transition: 0.3s ease;
         }
-
         .stat:hover {
             transform: translateY(-5px);
         }
-
         .stat strong {
             display: block;
             font-size: 1.7rem;
             color: #ec4899;
             margin-bottom: 6px;
         }
-
         .stat span {
             color: var(--text-soft);
             font-weight: 600;
         }
-
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 18px;
         }
-
         .skill-card {
             background: rgba(255, 255, 255, 0.78);
             border: 1px solid rgba(248, 200, 220, 0.85);
@@ -379,35 +334,29 @@
             transition: 0.35s ease;
             cursor: default;
         }
-
         .skill-card:hover {
             transform: translateY(-8px) rotate(-1deg);
             background: linear-gradient(135deg, #fff, #ffe4ec);
             box-shadow: 0 22px 38px rgba(244, 114, 182, 0.23);
         }
-
         .skill-icon {
             font-size: 2.2rem;
             margin-bottom: 12px;
         }
-
         .skill-card h3 {
             color: #4a4453;
             margin-bottom: 8px;
         }
-
         .skill-card p {
             color: var(--text-soft);
             font-size: 0.94rem;
             line-height: 1.5;
         }
-
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
         }
-
         .project-card {
             position: relative;
             min-height: 270px;
@@ -419,7 +368,6 @@
             overflow: hidden;
             transition: 0.35s ease;
         }
-
         .project-card::before {
             content: "";
             position: absolute;
@@ -430,11 +378,9 @@
             right: -35px;
             top: -35px;
         }
-
         .project-card:hover {
             transform: translateY(-10px);
         }
-
         .project-icon {
             width: 58px;
             height: 58px;
@@ -447,14 +393,12 @@
             position: relative;
             z-index: 1;
         }
-
         .project-card h3 {
             color: #3f364b;
             margin-bottom: 12px;
             position: relative;
             z-index: 1;
         }
-
         .project-card p {
             color: var(--text-soft);
             line-height: 1.7;
@@ -462,7 +406,6 @@
             position: relative;
             z-index: 1;
         }
-
         .project-labels {
             display: flex;
             flex-wrap: wrap;
@@ -470,7 +413,6 @@
             position: relative;
             z-index: 1;
         }
-
         .project-labels span {
             font-size: 0.8rem;
             padding: 7px 10px;
@@ -479,19 +421,16 @@
             color: #be185d;
             font-weight: 800;
         }
-
         .timeline {
             display: grid;
             gap: 18px;
         }
-
         .timeline-item {
             display: grid;
             grid-template-columns: 56px 1fr;
             gap: 18px;
             align-items: start;
         }
-
         .timeline-dot {
             width: 56px;
             height: 56px;
@@ -503,7 +442,6 @@
             font-size: 1.5rem;
             box-shadow: 0 14px 28px rgba(244, 114, 182, 0.28);
         }
-
         .timeline-content {
             background: rgba(255, 255, 255, 0.78);
             border: 1px solid rgba(248, 200, 220, 0.78);
@@ -511,95 +449,77 @@
             padding: 22px;
             box-shadow: 0 14px 28px rgba(244, 114, 182, 0.14);
         }
-
         .timeline-content h3 {
             color: #3f364b;
             margin-bottom: 8px;
         }
-
         .timeline-content p {
             color: var(--text-soft);
             line-height: 1.7;
         }
-
         .contact-card {
             text-align: center;
             background:
                 linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 228, 236, 0.78));
         }
-
         .contact-card p {
             color: var(--text-soft);
             line-height: 1.8;
             max-width: 740px;
             margin: 0 auto 28px;
         }
-
         footer {
             text-align: center;
             padding: 36px 20px;
             color: var(--text-soft);
         }
-
         .heart {
             color: #ec4899;
         }
-
         .reveal {
             opacity: 0;
             transform: translateY(28px);
             transition: 0.8s ease;
         }
-
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
-
         @media (max-width: 768px) {
             nav {
                 border-radius: 24px;
                 align-items: flex-start;
                 gap: 10px;
             }
-
             .nav-links {
                 display: none;
             }
-
             .hero-card {
                 padding: 42px 22px;
                 border-radius: 30px;
             }
-
             .avatar {
                 width: 124px;
                 height: 124px;
                 font-size: 2.75rem;
             }
-
             .about-grid {
                 grid-template-columns: 1fr;
             }
-
             .timeline-item {
                 grid-template-columns: 1fr;
             }
-
             .timeline-dot {
                 width: 48px;
                 height: 48px;
             }
-
             section {
                 padding: 58px 0;
             }
         }
     </style>
 </head>
-
 <body>
-
     <div class="floating-flower flower-1">🌸</div>
     <div class="floating-flower flower-2">🌷</div>
     <div class="floating-flower flower-3">✨</div>
@@ -609,10 +529,10 @@
     <nav>
         <div class="brand">LFQ ✨</div>
         <ul class="nav-links">
-            <li>#sobre-miSobre mí</a></li>
-            <li>#tecnologiasTecnologías</a></li>
-            <li>#proyectosProyectos</a></li>
-            <li>#contactoContacto</a></li>
+            <li><a href="#sobre-mi">💖 Sobre mí</a></li>
+            <li><a href="#tecnologias">🛠️ Tecnologías</a></li>
+            <li><a href="#proyectos">🚀 Proyectos</a></li>
+            <li><a href="#contacto">📬 Contacto</a></li>
         </ul>
     </nav>
 
@@ -620,20 +540,16 @@
         <div class="hero-card">
             <div class="hero-content">
                 <div class="avatar">LF</div>
-
                 <h1>
                     Luisa Fernanda <span class="gradient-text">Quintero</span>
                 </h1>
-
                 <p class="subtitle">
                     Analista de Datos & Automatización ✨
                 </p>
-
                 <p class="tagline">
                     Transformando datos en decisiones inteligentes mediante analítica comercial,
                     visualizaciones claras, automatización de procesos y soluciones con impacto real.
                 </p>
-
                 <div class="hero-tags">
                     <span>🐍 Python</span>
                     <span>☁️ BigQuery</span>
@@ -642,12 +558,11 @@
                     <span>📈 SQL</span>
                     <span>⚡ Automatización</span>
                 </div>
-
                 <div class="buttons">
-                    https://github.com/Lufequinra
+                    <a href="https://github.com/Lufequinra" target="_blank" class="btn btn-primary">
                         Ver GitHub
                     </a>
-                    #proyectos
+                    <a href="#proyectos" class="btn btn-secondary">
                         Ver proyectos
                     </a>
                 </div>
@@ -656,13 +571,11 @@
     </header>
 
     <main>
-
         <section id="sobre-mi" class="reveal">
             <div class="section-title">
                 <span>💖 Sobre mí</span>
                 <h2>Datos, diseño y automatización</h2>
             </div>
-
             <div class="about-grid">
                 <div class="glass-card about-text">
                     <p>
@@ -671,31 +584,26 @@
                         Me apasiona convertir datos complejos en soluciones claras,
                         eficientes y visualmente atractivas.
                     </p>
-
                     <p>
                         Trabajo con herramientas como BigQuery, SQL, Python, Looker,
                         Power BI y Excel para construir reportes, dashboards y procesos
                         que ayudan a tomar mejores decisiones de negocio.
                     </p>
-
                     <p>
                         Me gusta crear soluciones ordenadas, bonitas y funcionales:
                         desde modelos de datos hasta dashboards ejecutivos con una
                         experiencia visual limpia y profesional.
                     </p>
                 </div>
-
                 <div class="mini-stats">
                     <div class="stat">
                         <strong>Data</strong>
                         <span>Análisis comercial y KPIs ejecutivos</span>
                     </div>
-
                     <div class="stat">
                         <strong>Automation</strong>
                         <span>Procesos más rápidos y menos manuales</span>
                     </div>
-
                     <div class="stat">
                         <strong>Dashboards</strong>
                         <span>Visualización clara para comités y equipos</span>
@@ -709,38 +617,32 @@
                 <span>🛠️ Tecnologías</span>
                 <h2>Mi stack de trabajo</h2>
             </div>
-
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🐍</div>
                     <h3>Python</h3>
                     <p>Automatización, limpieza de datos y procesamiento de archivos.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">☁️</div>
                     <h3>BigQuery</h3>
                     <p>Consultas SQL, modelos analíticos y manejo de grandes volúmenes.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">📈</div>
                     <h3>SQL</h3>
                     <p>Transformación, cruces, validaciones y optimización de consultas.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">🔍</div>
                     <h3>Looker</h3>
                     <p>Dashboards, explores, LookML y visualización de indicadores.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">📊</div>
                     <h3>Power BI</h3>
                     <p>Reportes ejecutivos, medidas, KPIs y storytelling con datos.</p>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">⚡</div>
                     <h3>Automatización</h3>
@@ -754,9 +656,7 @@
                 <span>🚀 Proyectos</span>
                 <h2>Proyectos destacados</h2>
             </div>
-
             <div class="projects-grid">
-
                 <article class="project-card">
                     <div class="project-icon">🎁</div>
                     <h3>Gift Cards Analytics</h3>
@@ -770,7 +670,6 @@
                         <span>Looker</span>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-icon">📊</div>
                     <h3>Dashboard Comercial Ejecutivo</h3>
@@ -784,7 +683,6 @@
                         <span>KPIs</span>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-icon">🤖</div>
                     <h3>Automatización de Reportes</h3>
@@ -798,7 +696,6 @@
                         <span>Automation</span>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-icon">☁️</div>
                     <h3>BigQuery Analytics</h3>
@@ -812,7 +709,6 @@
                         <span>Data Modeling</span>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-icon">🌷</div>
                     <h3>Mi Día App</h3>
@@ -826,7 +722,6 @@
                         <span>Productivity</span>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-icon">✨</div>
                     <h3>Visual Storytelling</h3>
@@ -836,11 +731,11 @@
                     </p>
                     <div class="project-labels">
                         <span>Design</span>
+
                         <span>Dashboards</span>
                         <span>Insights</span>
                     </div>
                 </article>
-
             </div>
         </section>
 
@@ -849,9 +744,7 @@
                 <span>🌸 Lo que hago</span>
                 <h2>Cómo aporto valor</h2>
             </div>
-
             <div class="timeline">
-
                 <div class="timeline-item">
                     <div class="timeline-dot">1</div>
                     <div class="timeline-content">
@@ -862,7 +755,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot">2</div>
                     <div class="timeline-content">
@@ -873,7 +765,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot">3</div>
                     <div class="timeline-content">
@@ -883,7 +774,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-dot">4</div>
                     <div class="timeline-content">
@@ -894,7 +784,6 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -903,26 +792,22 @@
                 <span>📬 Contacto</span>
                 <h2>Conectemos</h2>
             </div>
-
             <div class="glass-card contact-card">
                 <p>
                     Gracias por visitar mi portafolio. Este espacio reúne mi interés por
                     los datos, la automatización, la visualización y la creación de soluciones
                     bonitas, útiles y eficientes.
                 </p>
-
                 <div class="buttons">
-                    https://github.com/Lufequinra
+                    <a href="https://github.com/Lufequinra" target="_blank" class="btn btn-primary">
                         GitHub
                     </a>
-
-                    lquinteror@falabella.com.co
+                    <a href="mailto:lquinteror@falabella.com.co" class="btn btn-secondary">
                         Enviar correo
                     </a>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -931,22 +816,18 @@
 
     <script>
         const reveals = document.querySelectorAll(".reveal");
-
         function revealOnScroll() {
             for (let i = 0; i < reveals.length; i++) {
                 const windowHeight = window.innerHeight;
                 const elementTop = reveals[i].getBoundingClientRect().top;
                 const visiblePoint = 120;
-
                 if (elementTop < windowHeight - visiblePoint) {
                     reveals[i].classList.add("active");
                 }
             }
         }
-
         window.addEventListener("scroll", revealOnScroll);
         window.addEventListener("load", revealOnScroll);
-
         document.addEventListener("mousemove", function(e) {
             const sparkle = document.createElement("div");
             sparkle.innerHTML = "✨";
@@ -958,19 +839,15 @@
             sparkle.style.opacity = "0.8";
             sparkle.style.zIndex = "9999";
             sparkle.style.transition = "all 0.8s ease";
-
             document.body.appendChild(sparkle);
-
             setTimeout(() => {
                 sparkle.style.transform = "translateY(-18px) scale(0.4)";
                 sparkle.style.opacity = "0";
             }, 20);
-
             setTimeout(() => {
                 sparkle.remove();
             }, 850);
         });
     </script>
-
 </body>
 </html>
